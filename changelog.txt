@@ -1,0 +1,5 @@
+Updates:
+
+v1.0
+	-. Homescreens
+	-. View: SLPanel & SLPanel_Seasons

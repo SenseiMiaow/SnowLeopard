@@ -1,0 +1,17 @@
+<colors>
+	<!-- DJXFMA MOD -->
+	<color name="SLyellowTitle">FFc4e103</color>
+	<color name="SLyellow">FFddfe00</color>
+	<color name="SLdarkyellow">FF9eb500</color>
+	<color name="SLblue">FF1d6f94</color>
+	<color name="SLdarkblue">FF024861</color>
+	
+	<color name="white">FFFFFFFF</color>
+	<color name="grey">FFb4b4b4</color>
+	<color name="grey2">88FFFFFF</color>
+	<color name="grey3">33FFFFFF</color>
+	<color name="black">FF000000</color>
+	<color name="blue">FF0084ff</color>
+	<color name="selected">FFEB9E17</color>
+	<color name="dialogheader">DDced8da</color>
+</colors>
