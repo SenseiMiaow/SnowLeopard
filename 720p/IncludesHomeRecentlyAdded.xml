@@ -16,7 +16,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
+					<texture background="true">home/paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				</control>
@@ -39,7 +39,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
+					<texture background="true">home/paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				</control>
@@ -130,41 +130,41 @@
 			<!-- fanart -->
 			<control type="image">
 				<posx>701r</posx>
-				<posy>547</posy>
+				<posy>595</posy>
 				<width>514</width>
-				<height>315</height>
+				<height>265</height>
 				<texture background="true">home/fanart_shadow.png</texture>
-				<aspectratio>scale</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>700r</posx>
-				<posy>548</posy>
+				<posy>596</posy>
 				<width>500</width>
-				<height>300</height>
+				<height>252</height>
 				<texture background="true">home/background_none.jpg</texture>
-				<aspectratio>scale</aspectratio>
-				<fadetime>200</fadetime>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>252</fadetime>
 				<include>VisibleFadeEffect</include>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>700r</posx>
-				<posy>548</posy>
+				<posy>596</posy>
 				<width>500</width>
-				<height>300</height>
+				<height>252</height>
 				<texture background="true">$INFO[Container(8010).ListItem.Property(FanartImage)]</texture>
-				<aspectratio>scale</aspectratio>
+				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 			</control>
 			<!-- paperclip -->
 			<control type="image">
-				<posx>-250</posx>
-				<posy>734</posy>
+				<posx>-300</posx>
+				<posy>761</posy>
 				<width>50</width>
 				<height>150</height>
 				<texture background="true">home/paperclip.png</texture>
@@ -249,7 +249,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
+					<texture background="true">home/paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				</control>
@@ -272,7 +272,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
+					<texture background="true">home/paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				</control>
@@ -301,7 +301,7 @@
 			<!-- show -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<height>60</height>
 				<width>285</width>
 				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MShow)]</label>
@@ -315,7 +315,7 @@
 			</control>
 			<control type="label">
 				<posx>700r</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<height>60</height>
 				<width>285</width>
 				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MShow)]</label>
@@ -330,7 +330,7 @@
 			<!-- show SkinDark? -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<height>60</height>
 				<width>285</width>
 				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MShow)]</label>
@@ -345,7 +345,7 @@
 			<!-- season -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>210</posy>
+				<posy>195</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$LOCALIZE[20373] $INFO[Container(8011).ListItem.Property(MSeason)]</label>
@@ -357,7 +357,7 @@
 			</control>
 			<control type="label">
 				<posx>700r</posx>
-				<posy>210</posy>
+				<posy>195</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$LOCALIZE[20373] $INFO[Container(8011).ListItem.Property(MSeason)]</label>
@@ -370,7 +370,7 @@
 			<!-- season SkinDark? -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>210</posy>
+				<posy>195</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$LOCALIZE[20373] $INFO[Container(8011).ListItem.Property(MSeason)]</label>
@@ -383,10 +383,10 @@
 			<!-- label -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>250</posy>
+				<posy>245</posy>
 				<height>60</height>
 				<width>270</width>
-				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MLabel)]</label>
+				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MNumber)]. $INFO[Container(8011).ListItem.Property(MLabel)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font24_title</font>
@@ -400,10 +400,10 @@
 			<!-- label SkinDark? -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>250</posy>
+				<posy>245</posy>
 				<height>60</height>
 				<width>270</width>
-				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MLabel)]</label>
+				<label fallback="Not available">$INFO[Container(8011).ListItem.Property(MNumber)]. $INFO[Container(8011).ListItem.Property(MLabel)]</label>
 				<align>left</align>
 				<aligny>center</aligny>
 				<font>font24_title</font>
@@ -442,12 +442,14 @@
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>Skin.HasSetting(SkinDark)</visible>
 			</control>
+			
+			
 			<!-- fanart -->
 			<control type="image">
 				<posx>695r</posx>
-				<posy>590</posy>
-				<width>305</width>
-				<height>230</height>
+				<posy>582</posy>
+				<width>485</width>
+				<height>290</height>
 				<texture background="true">home/fanart_shadow.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
@@ -456,9 +458,9 @@
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>640</posy>
-				<width>300</width>
-				<height>170</height>
+				<posy>632</posy>
+				<width>480</width>
+				<height>230</height>
 				<texture background="true">home/background_none.jpg</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
@@ -467,9 +469,9 @@
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>640</posy>
-				<width>300</width>
-				<height>170</height>
+				<posy>632</posy>
+				<width>480</width>
+				<height>230</height>
 				<texture background="true">$INFO[Container(8011).ListItem.Property(IconImage)]</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
@@ -478,18 +480,31 @@
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>590</posy>
-				<width>300</width>
-				<height>220</height>
+				<posy>582</posy>
+				<width>480</width>
+				<height>212</height>
+				<texture background="true" flipy="true">default_episode_cover_overlay.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>200</fadetime>
+				<include>VisibleFadeEffect</include>
+				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
+				<visible>Skin.HasSetting(EpisodesPaperFanArtBlack)</visible>
+			</control>
+			<control type="image">
+				<posx>697r</posx>
+				<posy>582</posy>
+				<width>480</width>
+				<height>212</height>
 				<texture background="true" flipy="true">default_episode_cover_overlay_focus2.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
+				<visible>!Skin.HasSetting(EpisodesPaperFanArtBlack)</visible>
 			</control>
 			<control type="label">
-				<posx>666r</posx>
-				<posy>480</posy>
+				<posx>670r</posx>
+				<posy>471</posy>
 				<height>20</height>
 				<width>240</width>
 				<label fallback="-">$LOCALIZE[20359] $INFO[Container(8011).ListItem.Property(MNumber)]</label>
@@ -501,7 +516,7 @@
 			<!-- paperclip -->
 			<control type="image">
 				<posx>-300</posx>
-				<posy>760</posy>
+				<posy>761</posy>
 				<width>50</width>
 				<height>150</height>
 				<texture background="true">home/paperclip.png</texture>
@@ -560,7 +575,7 @@
 					<posy>210</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
+					<texture background="true">home/paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 				</control>
@@ -583,7 +598,7 @@
 					<posy>210</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
+					<texture background="true">home/paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 				</control>
@@ -1053,7 +1068,7 @@
 								<posy>103</posy>
 								<height>20</height>
 								<width>155</width>
-								<label>Episode $INFO[ListItem.Property(MNumber)]</label>
+								<label>$LOCALIZE[20359] $INFO[ListItem.Property(MNumber)]</label>
 								<align>left</align>
 								<aligny>center</aligny>
 								<font>font21_title</font>
@@ -1066,6 +1081,9 @@
 						<control type="group">
 							<posx>0</posx>
 							<posy>10</posy>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" center="auto" start="60" end="104" time="600" tween="back" easing="out" />
+							</animation>
 							<control type="image">
 								<posx>-2</posx>
 								<posy>-7</posy>
@@ -1103,12 +1121,13 @@
 								<posy>103</posy>
 								<height>20</height>
 								<width>155</width>
-								<label>Episode $INFO[ListItem.Property(MNumber)]</label>
+								<label>$LOCALIZE[20359] $INFO[ListItem.Property(MNumber)] | $INFO[ListItem.Property(MLabel)]</label>
 								<align>left</align>
 								<aligny>center</aligny>
 								<font>font21_title</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>black</shadowcolor>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<textcolor>black</textcolor>
 							</control>
 						</control>
 					</focusedlayout>
@@ -1346,6 +1365,9 @@
 						<control type="group">
 							<posx>0</posx>
 							<posy>10</posy>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" center="auto" start="60" end="104" time="600" tween="back" easing="out" />
+							</animation>
 							<control type="image">
 								<posx>-2</posx>
 								<posy>-7</posy>
@@ -1387,9 +1409,9 @@
 								<align>left</align>
 								<aligny>center</aligny>
 								<font>font21_title</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>black</shadowcolor>
+								<textcolor>black</textcolor>
 								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
 							</control>
 						</control>
 					</focusedlayout>

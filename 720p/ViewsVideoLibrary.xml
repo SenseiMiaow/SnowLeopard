@@ -11,7 +11,7 @@
 			
 			<control type="group">
 				<control type="panel" id="901">
-					<visible>[Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] | Window.IsVisible(VideoFiles)]</visible>
+					<visible>[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] | Window.IsVisible(VideoFiles)]</visible>
 					<visible>!Container.Content(LiveTV)</visible>
 					<posx>25</posx>
 					<posy>177</posy>
@@ -141,7 +141,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
+					<texture background="true">home/paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Movies)">Conditional</animation>
 				</control>
@@ -164,7 +164,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
+					<texture background="true">home/paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Movies)">Conditional</animation>
 				</control>
@@ -312,7 +312,7 @@
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
 				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Movies)">Conditional</animation>
-				<visible>Skin.HasSetting(PaperFanArtBlack)</visible>
+				<visible>Skin.HasSetting(MoviesPaperFanArtBlack)</visible>
 			</control>
 			<control type="image">
 				<posx>700r</posx>
@@ -324,7 +324,7 @@
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
 				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Movies)">Conditional</animation>
-				<visible>!Skin.HasSetting(PaperFanArtBlack)</visible>
+				<visible>!Skin.HasSetting(MoviesPaperFanArtBlack)</visible>
 			</control>
 			<!-- rating -->
 			<control type="image">
@@ -438,7 +438,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
+					<texture background="true">home/paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(TVShows)">Conditional</animation>
 				</control>
@@ -461,7 +461,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
+					<texture background="true">home/paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(TVShows)">Conditional</animation>
 				</control>
@@ -797,380 +797,6 @@
 		</control>
 		
 		
-		<!-- Seasons -->
-		<control type="group">
-			<visible>[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)</visible>
-			<animation type="WindowOpen" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">
-				<effect type="slide" start="1000,0" delay="1000" time="2000" tween="elastic" easing="out"/>
-				<effect type="slide" start="600,0" delay="300" time="300" tween="elastic" easing="out"/>
-			</animation>
-			<!-- background -->
-			<control type="group">
-				<visible>!Skin.HasSetting(SkinDark)</visible>
-				<control type="image">
-					<posx>725r</posx>
-					<posy>150</posy>
-					<width>605</width>
-					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				</control>
-				<control type="image">
-					<posx>725r</posx>
-					<posy>150</posy>
-					<width>605</width>
-					<height>720</height>
-					<texture background="true">home/paperEpisodeTop.png</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
-				</control>
-			</control>
-			<!-- background SkinDark? -->
-			<control type="group">
-				<visible>Skin.HasSetting(SkinDark)</visible>
-				<control type="image">
-					<posx>725r</posx>
-					<posy>150</posy>
-					<width>605</width>
-					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				</control>
-				<control type="image">
-					<posx>725r</posx>
-					<posy>150</posy>
-					<width>605</width>
-					<height>720</height>
-					<texture background="true">home/paperEpisodeTopDark.png</texture>
-					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
-				</control>
-			</control>
-			<!-- glossy -->
-			<control type="image">
-				<posx>725r</posx>
-				<posy>150</posy>
-				<width>605</width>
-				<height>720</height>
-				<texture background="true">home/paperTopGlossy.png</texture>
-				<aspectratio>scale</aspectratio>
-				<animation effect="rotate" end="8" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>Skin.HasSetting(PaperOverlayGlossy)</visible>
-			</control>
-			<!-- total episodes -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>170</posy>
-				<height>60</height>
-				<width>285</width>
-				<label fallback="Not available">$INFO[ListItem.Episode,, $LOCALIZE[20360]]</label>
-				<align>left</align>
-				<font>font22_title</font>
-				<textcolor>black</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<control type="label">
-				<posx>700r</posx>
-				<posy>170</posy>
-				<height>60</height>
-				<width>285</width>
-				<label fallback="Not available">$INFO[ListItem.Episode,, $LOCALIZE[20360]]</label>
-				<align>left</align>
-				<font>font22_title</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
-			</control>
-			<!-- total episodes SkinDark? -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>170</posy>
-				<height>60</height>
-				<width>285</width>
-				<label fallback="Not available">$INFO[ListItem.Episode,, $LOCALIZE[20360]]</label>
-				<align>left</align>
-				<font>font22_title</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- unwatched -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>195</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-				<align>left</align>
-				<font>font21</font>
-				<textcolor>black</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + !Skin.HasSetting(PaperOverlay)</visible>
-			</control>
-			<control type="label">
-				<posx>700r</posx>
-				<posy>195</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-				<align>left</align>
-				<font>font21</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
-			</control>
-			<!-- unwatched SkinDark? -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>195</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
-				<align>left</align>
-				<font>font21</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- watched -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>217</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]</label>
-				<align>left</align>
-				<font>font21</font>
-				<textcolor>black</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + !Skin.HasSetting(PaperOverlay)</visible>
-			</control>
-			<control type="label">
-				<posx>700r</posx>
-				<posy>217</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]</label>
-				<align>left</align>
-				<font>font21</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
-			</control>
-			<!-- watched SkinDark? -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>217</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]</label>
-				<align>left</align>
-				<font>font21</font>
-				<textcolor>white</textcolor>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- label -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>250</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$INFO[ListItem.Label]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font24_title</font>
-				<textcolor>SLyellowTitle</textcolor>
-				<wrapmultiline>true</wrapmultiline>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- label SkinDark? -->
-			<control type="label">
-				<posx>700r</posx>
-				<posy>250</posy>
-				<height>60</height>
-				<width>270</width>
-				<label fallback="Not available">$INFO[ListItem.Label]</label>
-				<align>left</align>
-				<aligny>center</aligny>
-				<font>font24_title</font>
-				<textcolor>SLyellow</textcolor>
-				<wrapmultiline>true</wrapmultiline>
-				<scroll>true</scroll>
-				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- plot -->
-			<control type="textbox">
-				<posx>700r</posx>
-				<posy>360</posy>
-				<height>198</height>
-				<width>357</width>
-				<label fallback="Not available">$INFO[Container.ShowPlot]</label>
-				<align>justify</align>
-				<font>font12</font>
-				<textcolor>black</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- plot SkinDark? -->
-			<control type="textbox">
-				<posx>700r</posx>
-				<posy>360</posy>
-				<height>198</height>
-				<width>357</width>
-				<label fallback="Not available">$INFO[Container.ShowPlot]</label>
-				<align>justify</align>
-				<font>font12</font>
-				<textcolor>white</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(SkinDark)</visible>
-			</control>
-			<!-- fanart -->
-			<control type="image">
-				<posx>701r</posx>
-				<posy>590</posy>
-				<width>514</width>
-				<height>278</height>
-				<texture background="true">home/fanart_shadow.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>200</fadetime>
-				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>700r</posx>
-				<posy>590</posy>
-				<width>500</width>
-				<height>265</height>
-				<texture background="true">home/background_none.jpg</texture>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>200</fadetime>
-				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>700r</posx>
-				<posy>590</posy>
-				<width>500</width>
-				<height>265</height>
-				<texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
-				<aspectratio>stretch</aspectratio>
-				<fadetime>200</fadetime>
-				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<!-- rating -->
-			<control type="image">
-				<posx>270r</posx>
-				<posy>495</posy>
-				<width>120</width>
-				<height>24</height>
-				<texture>rating/$INFO[ListItem.StarRating]</texture>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<!-- paperclip -->
-			<control type="image">
-				<posx>-300</posx>
-				<posy>761</posy>
-				<width>50</width>
-				<height>150</height>
-				<texture background="true">home/paperclip.png</texture>
-				<aspectratio>stretch</aspectratio>
-				<animation effect="rotate" end="70" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<!-- icon -->
-			<control type="image">
-				<posx>435r</posx>
-				<posy>496</posy>
-				<width>152</width>
-				<height>215</height>
-				<texture background="true">default_cover.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<fadetime>200</fadetime>
-				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="24" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>435r</posx>
-				<posy>496</posy>
-				<width>152</width>
-				<height>215</height>
-				<texture background="true">$INFO[ListItem.Icon]</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<fadetime>200</fadetime>
-				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="24" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<control type="image">
-				<posx>575r</posx>
-				<posy>290</posy>
-				<width>490</width>
-				<height>480</height>
-				<texture background="true">home/dogtags.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<animation effect="rotate" end="25" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<!-- year -->
-			<control type="label">
-				<posx>820</posx>
-				<posy>-865</posy>
-				<height>20</height>
-				<width>140</width>
-				<label>Year $INFO[ListItem.Year]</label>
-				<font>font24_title</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<scrollspeed>true</scrollspeed>
-				<animation effect="rotate" end="312" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-			<!-- duration -->
-			<control type="label">
-				<posx>855</posx>
-				<posy>-835</posy>
-				<height>20</height>
-				<width>120</width>
-				<label>$INFO[ListItem.Duration]</label>
-				<font>font24_title</font>
-				<textcolor>white</textcolor>
-				<shadowcolor>black</shadowcolor>
-				<scroll>true</scroll>
-				<scrollspeed>true</scrollspeed>
-				<animation effect="rotate" end="312" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
-			</control>
-		</control>
-		
-		
 		<!-- Scrollbar -->
 		
 		<!-- Movies -->
@@ -1204,7 +830,7 @@
 				<effect type="slide" start="600,0" delay="300" time="300" tween="elastic" easing="out"/>
 			</animation>
 			<posx>700r</posx>
-			<posy>568</posy>
+			<posy>564</posy>
 			<width>500</width>
 			<height>25</height>
 			<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
@@ -1218,16 +844,527 @@
 			<orientation>horizontal</orientation>
 			<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(TVShows)">Conditional</animation>
 		</control>
+	</include>
+	
+	
+	
+	
+	<!-- SnowLeopard - SLPanel_Seasons -->
+	<include name="SLPanel_Seasons">
+		<control type="group">
+			<visible>Control.IsVisible(902)</visible>
+			<include>VisibleFadeEffect</include>
+			<posx>0</posx>
+			<posy>80</posy>
+			
+			<control type="group">
+				<control type="panel" id="902">
+					<visible>Container.Content(Seasons)</visible>
+					<posx>25</posx>
+					<posy>177</posy>
+					<width>655</width>
+					<height>515</height>
+					<onleft>57</onleft>
+					<onright>57</onright>
+					<onup>2</onup>
+					<ondown>60</ondown>
+					<viewtype label="SLPanel_Seasons">panel</viewtype>
+					<pagecontrol>60</pagecontrol>
+					<scrolltime>200</scrolltime>
+					<orientation>horizontal</orientation>
+					<preloaditems>12</preloaditems>
+					<itemlayout width="164" height="224">
+						<control type="group">
+							<posx>0</posx>
+							<posy>10</posy>
+							<control type="image">
+								<posx>-2</posx>
+								<posy>-4</posy>
+								<width>170</width>
+								<height>224</height>
+								<texture>home/poster_shadow.png</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>0</posy>
+								<width>146</width>
+								<height>179</height>
+								<texture background="true">default_cover.png</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>0</posy>
+								<width>146</width>
+								<height>179</height>
+								<texture background="true">$INFO[ListItem.Icon]</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>52</posy>
+								<width>146</width>
+								<height>165</height>
+								<texture background="true">default_episode_cover_overlay.png</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="label">
+								<posx>83</posx>
+								<posy>187</posy>
+								<height>20</height>
+								<width>146</width>
+								<label fallback="Not available">$LOCALIZE[20373] $INFO[ListItem.Season]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font22_title</font>
+								<textcolor>white</textcolor>
+								<shadowcolor>black</shadowcolor>
+							</control>
+						</control>
+					</itemlayout>
+					<focusedlayout width="164" height="224">
+						<control type="group">
+							<posx>0</posx>
+							<posy>10</posy>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" center="auto" start="60" end="104" time="600" tween="back" easing="out" />
+							</animation>
+							<control type="image">
+								<posx>-2</posx>
+								<posy>-8</posy>
+								<width>170</width>
+								<height>238</height>
+								<texture>home/poster_shadow_focus.png</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>0</posy>
+								<width>146</width>
+								<height>179</height>
+								<texture background="true">default_cover.png</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>0</posy>
+								<width>146</width>
+								<height>179</height>
+								<texture background="true">$INFO[ListItem.Icon]</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>10</posx>
+								<posy>52</posy>
+								<width>146</width>
+								<height>165</height>
+								<texture background="true">default_episode_cover_overlay_focus2.png</texture>
+								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="label">
+								<posx>83</posx>
+								<posy>187</posy>
+								<height>20</height>
+								<width>146</width>
+								<label fallback="Not available">$LOCALIZE[20373] $INFO[ListItem.Season]</label>
+								<align>center</align>
+								<aligny>center</aligny>
+								<font>font22_title</font>
+								<textcolor>black</textcolor>
+							</control>
+						</control>
+					</focusedlayout>
+				</control>
+			</control>
+		</control>
+		
+		
+		<!-- Seasons -->
+		<control type="group">
+			<visible>[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)</visible>
+			<animation type="WindowOpen" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">
+				<effect type="slide" start="1000,0" delay="1000" time="2000" tween="elastic" easing="out"/>
+				<effect type="slide" start="600,0" delay="300" time="300" tween="elastic" easing="out"/>
+			</animation>
+			<!-- background -->
+			<control type="group">
+				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<control type="image">
+					<posx>725r</posx>
+					<posy>150</posy>
+					<width>605</width>
+					<height>720</height>
+					<texture background="true">home/paper.png</texture>
+					<aspectratio>scale</aspectratio>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>725r</posx>
+					<posy>150</posy>
+					<width>605</width>
+					<height>720</height>
+					<texture background="true">home/paperEpisodeTop.png</texture>
+					<aspectratio>scale</aspectratio>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+					<visible>Skin.HasSetting(PaperOverlay)</visible>
+				</control>
+			</control>
+			<!-- background SkinDark? -->
+			<control type="group">
+				<visible>Skin.HasSetting(SkinDark)</visible>
+				<control type="image">
+					<posx>725r</posx>
+					<posy>150</posy>
+					<width>605</width>
+					<height>720</height>
+					<texture background="true">home/paperDark.png</texture>
+					<aspectratio>scale</aspectratio>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				</control>
+				<control type="image">
+					<posx>725r</posx>
+					<posy>150</posy>
+					<width>605</width>
+					<height>720</height>
+					<texture background="true">home/paperEpisodeTopDark.png</texture>
+					<aspectratio>scale</aspectratio>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+					<visible>Skin.HasSetting(PaperOverlay)</visible>
+				</control>
+			</control>
+			<!-- glossy -->
+			<control type="image">
+				<posx>725r</posx>
+				<posy>150</posy>
+				<width>605</width>
+				<height>720</height>
+				<texture background="true">home/paperTopGlossy.png</texture>
+				<aspectratio>scale</aspectratio>
+				<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>Skin.HasSetting(PaperOverlayGlossy)</visible>
+			</control>
+			<!-- total episodes -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>170</posy>
+				<height>60</height>
+				<width>285</width>
+				<label fallback="Not available">$INFO[ListItem.Episode,, $LOCALIZE[20360]]</label>
+				<align>left</align>
+				<font>font22_title</font>
+				<textcolor>black</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<control type="label">
+				<posx>700r</posx>
+				<posy>170</posy>
+				<height>60</height>
+				<width>285</width>
+				<label fallback="Not available">$INFO[ListItem.Episode,, $LOCALIZE[20360]]</label>
+				<align>left</align>
+				<font>font22_title</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
+			</control>
+			<!-- total episodes SkinDark? -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>170</posy>
+				<height>60</height>
+				<width>285</width>
+				<label fallback="Not available">$INFO[ListItem.Episode,, $LOCALIZE[20360]]</label>
+				<align>left</align>
+				<font>font22_title</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- unwatched -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>195</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+				<align>left</align>
+				<font>font21</font>
+				<textcolor>black</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark) + !Skin.HasSetting(PaperOverlay)</visible>
+			</control>
+			<control type="label">
+				<posx>700r</posx>
+				<posy>195</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+				<align>left</align>
+				<font>font21</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
+			</control>
+			<!-- unwatched SkinDark? -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>195</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$LOCALIZE[16101] $INFO[ListItem.Property(UnWatchedEpisodes)]</label>
+				<align>left</align>
+				<font>font21</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- watched -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>217</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]</label>
+				<align>left</align>
+				<font>font21</font>
+				<textcolor>black</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark) + !Skin.HasSetting(PaperOverlay)</visible>
+			</control>
+			<control type="label">
+				<posx>700r</posx>
+				<posy>217</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]</label>
+				<align>left</align>
+				<font>font21</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
+			</control>
+			<!-- watched SkinDark? -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>217</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$LOCALIZE[16102] $INFO[ListItem.Property(WatchedEpisodes)]</label>
+				<align>left</align>
+				<font>font21</font>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- label -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>250</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$INFO[ListItem.Label]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font24_title</font>
+				<textcolor>SLyellowTitle</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>!Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- label SkinDark? -->
+			<control type="label">
+				<posx>700r</posx>
+				<posy>250</posy>
+				<height>60</height>
+				<width>270</width>
+				<label fallback="Not available">$INFO[ListItem.Label]</label>
+				<align>left</align>
+				<aligny>center</aligny>
+				<font>font24_title</font>
+				<textcolor>SLyellow</textcolor>
+				<wrapmultiline>true</wrapmultiline>
+				<scroll>true</scroll>
+				<scrollspeed>30</scrollspeed>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<visible>Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- plot -->
+			<control type="textbox">
+				<posx>700r</posx>
+				<posy>360</posy>
+				<height>198</height>
+				<width>357</width>
+				<label fallback="Not available">$INFO[Container.ShowPlot]</label>
+				<align>justify</align>
+				<font>font12</font>
+				<textcolor>black</textcolor>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>!Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- plot SkinDark? -->
+			<control type="textbox">
+				<posx>700r</posx>
+				<posy>360</posy>
+				<height>198</height>
+				<width>357</width>
+				<label fallback="Not available">$INFO[Container.ShowPlot]</label>
+				<align>justify</align>
+				<font>font12</font>
+				<textcolor>white</textcolor>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
+				<visible>Skin.HasSetting(SkinDark)</visible>
+			</control>
+			<!-- fanart -->
+			<control type="image">
+				<posx>701r</posx>
+				<posy>590</posy>
+				<width>514</width>
+				<height>278</height>
+				<texture background="true">home/fanart_shadow.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>200</fadetime>
+				<include>VisibleFadeEffect</include>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>700r</posx>
+				<posy>590</posy>
+				<width>500</width>
+				<height>265</height>
+				<texture background="true">home/background_none.jpg</texture>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>200</fadetime>
+				<include>VisibleFadeEffect</include>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>700r</posx>
+				<posy>590</posy>
+				<width>500</width>
+				<height>265</height>
+				<texture background="true">$INFO[ListItem.Property(fanart_image)]</texture>
+				<aspectratio>stretch</aspectratio>
+				<fadetime>200</fadetime>
+				<include>VisibleFadeEffect</include>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<!-- rating -->
+			<control type="image">
+				<posx>270r</posx>
+				<posy>495</posy>
+				<width>120</width>
+				<height>24</height>
+				<texture>rating/$INFO[ListItem.StarRating]</texture>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<!-- paperclip -->
+			<control type="image">
+				<posx>-300</posx>
+				<posy>761</posy>
+				<width>50</width>
+				<height>150</height>
+				<texture background="true">home/paperclip.png</texture>
+				<aspectratio>stretch</aspectratio>
+				<animation effect="rotate" end="70" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<!-- icon -->
+			<control type="image">
+				<posx>435r</posx>
+				<posy>496</posy>
+				<width>152</width>
+				<height>215</height>
+				<texture background="true">default_cover.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<fadetime>200</fadetime>
+				<include>VisibleFadeEffect</include>
+				<animation effect="rotate" end="24" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>435r</posx>
+				<posy>496</posy>
+				<width>152</width>
+				<height>215</height>
+				<texture background="true">$INFO[ListItem.Icon]</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<fadetime>200</fadetime>
+				<include>VisibleFadeEffect</include>
+				<animation effect="rotate" end="24" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<control type="image">
+				<posx>575r</posx>
+				<posy>290</posy>
+				<width>490</width>
+				<height>480</height>
+				<texture background="true">home/dogtags.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<animation effect="rotate" end="25" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<!-- year -->
+			<control type="label">
+				<posx>820</posx>
+				<posy>-865</posy>
+				<height>20</height>
+				<width>140</width>
+				<label>$INFO[ListItem.Year, $LOCALIZE[345]]</label>
+				<font>font24_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<scrollspeed>true</scrollspeed>
+				<animation effect="rotate" end="312" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+			<!-- duration -->
+			<control type="label">
+				<posx>855</posx>
+				<posy>-835</posy>
+				<height>20</height>
+				<width>120</width>
+				<label>$INFO[ListItem.Duration]</label>
+				<font>font24_title</font>
+				<textcolor>white</textcolor>
+				<shadowcolor>black</shadowcolor>
+				<scroll>true</scroll>
+				<scrollspeed>true</scrollspeed>
+				<animation effect="rotate" end="312" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			</control>
+		</control>
+		
+		
+		<!-- Scrollbar -->
 		
 		<!-- Seasons -->
 		<control type="scrollbar" id="60">
-			<visible>[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)</visible>
-			<animation type="WindowOpen" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">
+			<visible>[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)</visible>
+			<animation type="WindowOpen" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">
 				<effect type="slide" start="1000,0" delay="1000" time="2000" tween="elastic" easing="out"/>
 				<effect type="slide" start="600,0" delay="300" time="300" tween="elastic" easing="out"/>
 			</animation>
 			<posx>700r</posx>
-			<posy>568</posy>
+			<posy>564</posy>
 			<width>500</width>
 			<height>25</height>
 			<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
@@ -1239,22 +1376,23 @@
 			<ondown>9000</ondown>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="rotate" end="9" condition="[Control.IsVisible(901) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
+			<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Seasons)">Conditional</animation>
 		</control>
 	</include>
 	
 	
 	
-	<!-- View: SLPanel_Seasons -->
-	<include name="SLPanel_Seasons">
+	
+	<!-- View: SLPanel_Episodes -->
+	<include name="SLPanel_Episodes">
 		<control type="group">
-			<visible>Control.IsVisible(902)</visible>
+			<visible>Control.IsVisible(903)</visible>
 			<include>VisibleFadeEffect</include>
 			<posx>0</posx>
 			<posy>80</posy>
 			
 			<control type="group">
-				<control type="panel" id="902">
+				<control type="panel" id="903">
 					<visible>Container.Content(Episodes)</visible>
 					<posx>25</posx>
 					<posy>213</posy>
@@ -1264,7 +1402,7 @@
 					<onright>57</onright>
 					<onup>2</onup>
 					<ondown>60</ondown>
-					<viewtype label="SLPanel_Seasons">panel</viewtype>
+					<viewtype label="SLPanel_Episodes">panel</viewtype>
 					<pagecontrol>60</pagecontrol>
 					<scrolltime>200</scrolltime>
 					<orientation>horizontal</orientation>
@@ -1323,6 +1461,9 @@
 						<control type="group">
 							<posx>0</posx>
 							<posy>10</posy>
+							<animation type="Focus" reversible="false">
+								<effect type="zoom" center="auto" start="60" end="104" time="600" tween="back" easing="out" />
+							</animation>
 							<control type="image">
 								<posx>-2</posx>
 								<posy>-7</posy>
@@ -1360,12 +1501,13 @@
 								<posy>103</posy>
 								<height>20</height>
 								<width>155</width>
-								<label fallback="-">$LOCALIZE[20359] $INFO[ListItem.Episode]</label>
+								<label fallback="-">$LOCALIZE[20359] $INFO[ListItem.Episode] | $INFO[ListItem.Title]</label>
 								<align>left</align>
 								<aligny>center</aligny>
 								<font>font21_title</font>
-								<textcolor>white</textcolor>
-								<shadowcolor>black</shadowcolor>
+								<scroll>true</scroll>
+								<scrollspeed>30</scrollspeed>
+								<textcolor>black</textcolor>
 							</control>
 						</control>
 					</focusedlayout>
@@ -1377,8 +1519,8 @@
 		
 		<!-- Episodes -->
 		<control type="group">
-			<visible>[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)</visible>
-			<animation type="WindowOpen" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">
+			<visible>[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)</visible>
+			<animation type="WindowOpen" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">
 				<effect type="slide" start="1000,0" delay="1000" time="2000" tween="elastic" easing="out"/>
 				<effect type="slide" start="600,0" delay="300" time="300" tween="elastic" easing="out"/>
 			</animation>
@@ -1390,9 +1532,9 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.jpg</texture>
+					<texture background="true">home/paper.png</texture>
 					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>725r</posx>
@@ -1401,7 +1543,7 @@
 					<height>720</height>
 					<texture background="true">home/paperEpisodeTop.png</texture>
 					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 					<visible>Skin.HasSetting(PaperOverlay)</visible>
 				</control>
 			</control>
@@ -1413,9 +1555,9 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.jpg</texture>
+					<texture background="true">home/paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				</control>
 				<control type="image">
 					<posx>725r</posx>
@@ -1424,7 +1566,7 @@
 					<height>720</height>
 					<texture background="true">home/paperEpisodeTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
-					<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+					<animation effect="rotate" end="8" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 					<visible>Skin.HasSetting(PaperOverlay)</visible>
 				</control>
 			</control>
@@ -1436,13 +1578,13 @@
 				<height>720</height>
 				<texture background="true">home/paperEpisodeTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
-				<animation effect="rotate" end="8" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="8" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>Skin.HasSetting(PaperOverlayGlossy)</visible>
 			</control>
 			<!-- show -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<height>60</height>
 				<width>285</width>
 				<label fallback="Not available">$INFO[ListItem.TVShowTitle]</label>
@@ -1451,12 +1593,12 @@
 				<textcolor>black</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>!Skin.HasSetting(SkinDark)</visible>
 			</control>
 			<control type="label">
 				<posx>700r</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<height>60</height>
 				<width>285</width>
 				<label fallback="Not available">$INFO[ListItem.TVShowTitle]</label>
@@ -1465,13 +1607,13 @@
 				<textcolor>white</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
 			</control>
 			<!-- show SkinDark? -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>180</posy>
+				<posy>170</posy>
 				<height>60</height>
 				<width>285</width>
 				<label fallback="Not available">$INFO[ListItem.TVShowTitle]</label>
@@ -1480,51 +1622,51 @@
 				<textcolor>white</textcolor>
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>Skin.HasSetting(SkinDark)</visible>
 			</control>
 			<!-- season -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>210</posy>
+				<posy>195</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$LOCALIZE[20373] $INFO[ListItem.Season]</label>
 				<align>left</align>
 				<font>font21</font>
 				<textcolor>black</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>!Skin.HasSetting(SkinDark) + !Skin.HasSetting(PaperOverlay)</visible>
 			</control>
 			<control type="label">
 				<posx>700r</posx>
-				<posy>210</posy>
+				<posy>195</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$LOCALIZE[20373] $INFO[ListItem.Season]</label>
 				<align>left</align>
 				<font>font21</font>
 				<textcolor>white</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
 			</control>
 			<!-- season SkinDark? -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>210</posy>
+				<posy>195</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$LOCALIZE[20373] $INFO[ListItem.Season]</label>
 				<align>left</align>
 				<font>font21</font>
 				<textcolor>white</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>Skin.HasSetting(SkinDark)</visible>
 			</control>
 			<!-- label -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>250</posy>
+				<posy>245</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$INFO[ListItem.Label]</label>
@@ -1535,13 +1677,13 @@
 				<wrapmultiline>true</wrapmultiline>
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>!Skin.HasSetting(SkinDark)</visible>
 			</control>
 			<!-- label SkinDark? -->
 			<control type="label">
 				<posx>700r</posx>
-				<posy>250</posy>
+				<posy>245</posy>
 				<height>60</height>
 				<width>270</width>
 				<label fallback="Not available">$INFO[ListItem.Label]</label>
@@ -1552,20 +1694,20 @@
 				<wrapmultiline>true</wrapmultiline>
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<visible>Skin.HasSetting(SkinDark)</visible>
 			</control>
 			<!-- plot -->
 			<control type="textbox">
 				<posx>700r</posx>
 				<posy>358</posy>
-				<height>218</height>
+				<height>198</height>
 				<width>287</width>
 				<label fallback="Not available">$INFO[ListItem.Plot]</label>
 				<align>justify</align>
 				<font>font12</font>
 				<textcolor>black</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>!Skin.HasSetting(SkinDark)</visible>
 			</control>
@@ -1573,73 +1715,73 @@
 			<control type="textbox">
 				<posx>700r</posx>
 				<posy>358</posy>
-				<height>218</height>
+				<height>198</height>
 				<width>287</width>
 				<label fallback="Not available">$INFO[ListItem.Plot]</label>
 				<align>justify</align>
 				<font>font12</font>
 				<textcolor>white</textcolor>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				<visible>Skin.HasSetting(SkinDark)</visible>
 			</control>
 			<!-- fanart -->
 			<control type="image">
 				<posx>695r</posx>
-				<posy>592</posy>
-				<width>505</width>
+				<posy>582</posy>
+				<width>485</width>
 				<height>290</height>
 				<texture background="true">home/fanart_shadow.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>642</posy>
-				<width>500</width>
+				<posy>632</posy>
+				<width>480</width>
 				<height>230</height>
 				<texture background="true">home/background_none.jpg</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>642</posy>
-				<width>500</width>
+				<posy>632</posy>
+				<width>480</width>
 				<height>230</height>
 				<texture background="true">$INFO[ListItem.Icon]</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>592</posy>
-				<width>500</width>
+				<posy>582</posy>
+				<width>480</width>
 				<height>212</height>
 				<texture background="true" flipy="true">default_episode_cover_overlay.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
-				<visible>Skin.HasSetting(PaperFanArtBlack)</visible>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<visible>Skin.HasSetting(EpisodesPaperFanArtBlack)</visible>
 			</control>
 			<control type="image">
 				<posx>697r</posx>
-				<posy>592</posy>
-				<width>500</width>
+				<posy>582</posy>
+				<width>480</width>
 				<height>212</height>
 				<texture background="true" flipy="true">default_episode_cover_overlay_focus2.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
-				<visible>!Skin.HasSetting(PaperFanArtBlack)</visible>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<visible>!Skin.HasSetting(EpisodesPaperFanArtBlack)</visible>
 			</control>
 			<!-- rating -->
 			<control type="image">
@@ -1648,13 +1790,13 @@
 				<width>120</width>
 				<height>24</height>
 				<texture>rating/$INFO[ListItem.StarRating]</texture>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<!-- media codec flagging -->
 			<control type="grouplist">
 				<posx>700r</posx>
-				<posy>597</posy>
-				<width>490</width>
+				<posy>590</posy>
+				<width>470</width>
 				<align>center</align>
 				<itemgap>0</itemgap>
 				<orientation>horizontal</orientation>
@@ -1662,17 +1804,17 @@
 				<include>AudioCodecFlaggingConditions</include>
 				<include>AspectCodecFlaggingConditions</include>
 				<include>VideoTypeHackFlaggingConditions</include>
-				<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<!-- paperclip -->
 			<control type="image">
 				<posx>-300</posx>
-				<posy>760</posy>
+				<posy>761</posy>
 				<width>50</width>
 				<height>150</height>
 				<texture background="true">home/paperclip.png</texture>
 				<aspectratio>stretch</aspectratio>
-				<animation effect="rotate" end="70" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="70" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<!-- icon -->
 			<control type="image">
@@ -1684,7 +1826,7 @@
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="351" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="351" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>189r</posx>
@@ -1695,7 +1837,7 @@
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
-				<animation effect="rotate" end="351" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="351" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 			<control type="image">
 				<posx>-200</posx>
@@ -1704,7 +1846,7 @@
 				<height>480</height>
 				<texture background="true">home/dogtags.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<animation effect="rotate" end="80" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+				<animation effect="rotate" end="80" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 			</control>
 		</control>
 		
@@ -1714,14 +1856,14 @@
 		
 		<!-- Episodes -->
 		<control type="scrollbar" id="60">
-			<visible>[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)</visible>
-			<animation type="WindowOpen" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">
+			<visible>[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)</visible>
+			<animation type="WindowOpen" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">
 				<effect type="slide" start="1000,0" delay="1000" time="2000" tween="elastic" easing="out"/>
 				<effect type="slide" start="600,0" delay="300" time="300" tween="elastic" easing="out"/>
 			</animation>
 			<posx>700r</posx>
-			<posy>568</posy>
-			<width>500</width>
+			<posy>560</posy>
+			<width>480</width>
 			<height>25</height>
 			<texturesliderbackground border="14,0,14,0">ScrollBarH.png</texturesliderbackground>
 			<texturesliderbar border="14,0,14,0">ScrollBarH_bar.png</texturesliderbar>
@@ -1732,7 +1874,7 @@
 			<ondown>9000</ondown>
 			<showonepage>false</showonepage>
 			<orientation>horizontal</orientation>
-			<animation effect="rotate" end="9" condition="[Control.IsVisible(902) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
+			<animation effect="rotate" end="9" condition="[Control.IsVisible(903) + !Window.IsVisible(VideoFiles)] + Container.Content(Episodes)">Conditional</animation>
 		</control>
 	</include>
 	

@@ -210,7 +210,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>PaperOverlay</label>
+						<label>Paper Overlay</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -222,7 +222,7 @@
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>PaperOverlayGlossy</label>
+						<label>Paper Glossy Overlay</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
@@ -230,18 +230,57 @@
 						<onclick>Skin.ToggleSetting(PaperOverlayGlossy)</onclick>
 						<selected>Skin.HasSetting(PaperOverlayGlossy)</selected>
 					</control>
-					<control type="radiobutton" id="904">
+					
+					
+					<!-- SnowLeopard - Movies -->
+					<control type="label" id="910">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>SnowLeopard - Movies</label>
+						<textcolor>SLyellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="911">
 						<width>750</width>
 						<height>40</height>
 						<font>font13</font>
-						<label>PaperFanArtBlack</label>
+						<label>Movies Paper FanArt Blackbox</label>
 						<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
 						<texturefocus>MenuItemFO.png</texturefocus>
 						<texturenofocus>MenuItemNF.png</texturenofocus>
-						<onclick>Skin.ToggleSetting(PaperFanArtBlack)</onclick>
-						<selected>Skin.HasSetting(PaperFanArtBlack)</selected>
+						<onclick>Skin.ToggleSetting(MoviesPaperFanArtBlack)</onclick>
+						<selected>Skin.HasSetting(MoviesPaperFanArtBlack)</selected>
 					</control>
+					
+					
+					<!-- SnowLeopard - Episodes -->
+					<control type="label" id="920">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>SnowLeopard - Episodes</label>
+						<textcolor>SLyellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="921">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Episodes Paper FanArt Blackbox</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(EpisodesPaperFanArtBlack)</onclick>
+						<selected>Skin.HasSetting(EpisodesPaperFanArtBlack)</selected>
+					</control>
+					
 					<!-- SnowLeopard -->
 					
 					

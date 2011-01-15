@@ -1,7 +1,7 @@
 <window id="6">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<views>50,51,550,560,500,901,902,501,508,505</views>
+	<views>50,51,550,560,500,901,902,903,501,508,505</views>
 	<controls>
 		<include>CommonVideoBackground</include>
 		<control type="image">
@@ -100,6 +100,7 @@
 			<include>ThumbnailView</include> <!-- view id = 500 -->
 			<include>SLPanel</include> <!-- view id = 901 -->
 			<include>SLPanel_Seasons</include> <!-- view id = 902 -->
+			<include>SLPanel_Episode</include> <!-- view id = 903 -->
 			<include>PosterWrapView</include> <!-- view id = 501 -->
 			<include>PosterWrapView2_Fanart</include> <!-- view id = 508 -->
 			<include>WideIconView</include> <!-- view id = 505 -->

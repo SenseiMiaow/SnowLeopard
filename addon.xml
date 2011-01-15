@@ -18,10 +18,10 @@
   <extension point="xbmc.addon.metadata">
     <summary lang="en">SnowLeopard skin by DJXFMA</summary>
     <summary lang="nl">SnowLeopard skin door DJXFMA</summary>
-    <description lang="en">SnowLeopard</description>
-    <description lang="nl">SnowLeopard</description>
-    <disclaimer lang="en">SnowLeopard</disclaimer>
-    <disclaimer lang="nl">SnowLeopard</disclaimer>
+    <description lang="en">SnowLeopard is the default skin for XBMC Dharma. It is a combination of concepts from many popular skins, and attempts to embrace and integrate their good ideas into a skin that should be easy for first time XBMC users to understand and use.</description>
+    <description lang="nl">SnowLeopard is de standaard skin voor XBMC Dharma en hoger. Het combineert de concepten van andere populaire skins, waarbij het tracht hun goede ideëen te integreren in een skin die gemakkelijk in gebruik is.</description>
+    <disclaimer lang="en">SnowLeopard is the default skin for XBMC, removing it may cause issues</disclaimer>
+    <disclaimer lang="nl">SnowLeopard is de standaard XMBC skin, het verwijderen van SnowLeopard kan leiden tot problemen.</disclaimer>
     <platform>all</platform>
   </extension>
 </addon>
