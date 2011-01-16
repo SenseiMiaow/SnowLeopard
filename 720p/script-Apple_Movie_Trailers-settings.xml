@@ -392,7 +392,7 @@
 					<width>190</width>
 					<height>80</height>
 					<aspectratio>keep</aspectratio>
-					<texture>Confluence_Logo.png</texture>
+					<texture>logo.png</texture>
 				</control>
 				<control type="button" id="250">
 					<description>OK button</description>

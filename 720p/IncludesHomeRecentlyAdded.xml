@@ -10,7 +10,7 @@
 			<visible>[Container(9000).HasFocus(10) | Control.HasFocus(8010)]</visible>
 			<!-- background -->
 			<control type="group">
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MoviesSkinDark)</visible>
 				<control type="image">
 					<posx>725r</posx>
 					<posy>150</posy>
@@ -28,12 +28,12 @@
 					<texture background="true">home/paperTop.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
+					<visible>Skin.HasSetting(MoviesPaperOverlay)</visible>
 				</control>
 			</control>
 			<!-- background SkinDark? -->
 			<control type="group">
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MoviesSkinDark)</visible>
 				<control type="image">
 					<posx>725r</posx>
 					<posy>150</posy>
@@ -51,7 +51,7 @@
 					<texture background="true">home/paperTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
+					<visible>Skin.HasSetting(MoviesPaperOverlay)</visible>
 				</control>
 			</control>
 			<!-- glossy -->
@@ -63,7 +63,7 @@
 				<texture background="true">home/paperTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
-				<visible>Skin.HasSetting(PaperOverlayGlossy)</visible>
+				<visible>Skin.HasSetting(MoviesPaperOverlayGlossy)</visible>
 			</control>
 			<!-- label -->
 			<control type="label">
@@ -80,7 +80,7 @@
 				<scroll>true</scroll>
 				<scrolspeed>30</scrolspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MoviesSkinDark)</visible>
 			</control>
 			<!-- label SkinDark? -->
 			<control type="label">
@@ -97,7 +97,7 @@
 				<scroll>true</scroll>
 				<scrolspeed>30</scrolspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MoviesSkinDark)</visible>
 			</control>
 			<!-- plot -->
 			<control type="textbox">
@@ -111,7 +111,7 @@
 				<textcolor>black</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MoviesSkinDark)</visible>
 			</control>
 			<!-- plot SkinDark? -->
 			<control type="textbox">
@@ -125,7 +125,7 @@
 				<textcolor>white</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MoviesSkinDark)</visible>
 			</control>
 			<!-- fanart -->
 			<control type="image">
@@ -243,7 +243,7 @@
 			<visible>[Container(9000).HasFocus(11) | Control.HasFocus(8011)]</visible>
 			<!-- background -->
 			<control type="group">
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark)</visible>
 				<control type="image">
 					<posx>725r</posx>
 					<posy>150</posy>
@@ -261,12 +261,12 @@
 					<texture background="true">home/paperEpisodeTop.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
+					<visible>Skin.HasSetting(EpisodesPaperOverlay)</visible>
 				</control>
 			</control>
 			<!-- background SkinDark? -->
 			<control type="group">
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(EpisodesSkinDark)</visible>
 				<control type="image">
 					<posx>725r</posx>
 					<posy>150</posy>
@@ -284,7 +284,7 @@
 					<texture background="true">home/paperEpisodeTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
+					<visible>Skin.HasSetting(EpisodesPaperOverlay)</visible>
 				</control>
 			</control>
 			<!-- glossy -->
@@ -296,7 +296,7 @@
 				<texture background="true">home/paperEpisodeTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>Skin.HasSetting(PaperOverlayGlossy)</visible>
+				<visible>Skin.HasSetting(EpisodesPaperOverlayGlossy)</visible>
 			</control>
 			<!-- show -->
 			<control type="label">
@@ -311,7 +311,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
 			<control type="label">
 				<posx>700r</posx>
@@ -325,7 +325,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark) + Skin.HasSetting(EpisodesPaperOverlay)</visible>
 			</control>
 			<!-- show SkinDark? -->
 			<control type="label">
@@ -340,7 +340,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
 			<!-- season -->
 			<control type="label">
@@ -353,7 +353,7 @@
 				<font>font21</font>
 				<textcolor>black</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + !Skin.HasSetting(PaperOverlay)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark) + !Skin.HasSetting(EpisodesPaperOverlay)</visible>
 			</control>
 			<control type="label">
 				<posx>700r</posx>
@@ -365,7 +365,7 @@
 				<font>font21</font>
 				<textcolor>white</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark) + Skin.HasSetting(PaperOverlay)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark) + Skin.HasSetting(EpisodesPaperOverlay)</visible>
 			</control>
 			<!-- season SkinDark? -->
 			<control type="label">
@@ -378,7 +378,7 @@
 				<font>font21</font>
 				<textcolor>white</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
 			<!-- label -->
 			<control type="label">
@@ -395,7 +395,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
 			<!-- label SkinDark? -->
 			<control type="label">
@@ -412,7 +412,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
 			<!-- plot -->
 			<control type="textbox">
@@ -426,7 +426,7 @@
 				<textcolor>black</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
 			<!-- plot SkinDark? -->
 			<control type="textbox">
@@ -440,10 +440,8 @@
 				<textcolor>white</textcolor>
 				<animation effect="rotate" end="9" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				<autoscroll time="2000" delay="8000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(EpisodesSkinDark)</visible>
 			</control>
-			
-			
 			<!-- fanart -->
 			<control type="image">
 				<posx>695r</posx>
@@ -569,7 +567,7 @@
 			<visible>[Container(9000).HasFocus(3) | Control.HasFocus(8013)]</visible>
 			<!-- background -->
 			<control type="group">
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MusicSkinDark)</visible>
 				<control type="image">
 					<posx>600r</posx>
 					<posy>210</posy>
@@ -587,12 +585,12 @@
 					<texture background="true">home/paperTop.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
+					<visible>Skin.HasSetting(MusicPaperOverlay)</visible>
 				</control>
 			</control>
 			<!-- background SkinDark? -->
 			<control type="group">
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MusicSkinDark)</visible>
 				<control type="image">
 					<posx>600r</posx>
 					<posy>210</posy>
@@ -610,7 +608,7 @@
 					<texture background="true">home/paperTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-					<visible>Skin.HasSetting(PaperOverlay)</visible>
+					<visible>Skin.HasSetting(MusicPaperOverlay)</visible>
 				</control>				
 			</control>
 			<!-- glossy -->
@@ -622,7 +620,7 @@
 				<texture background="true">home/paperTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>Skin.HasSetting(PaperOverlayGlossy)</visible>
+				<visible>Skin.HasSetting(MusicPaperOverlayGlossy)</visible>
 			</control>
 			<!-- label -->
 			<control type="label">
@@ -638,7 +636,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MusicSkinDark)</visible>
 			</control>
 			<!-- label SkinDark? -->
 			<control type="label">
@@ -654,7 +652,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MusicSkinDark)</visible>
 			</control>
 			<!-- artist -->
 			<control type="label">
@@ -669,7 +667,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MusicSkinDark)</visible>
 			</control>
 			<!-- artist SkinDark? -->
 			<control type="label">
@@ -684,7 +682,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MusicSkinDark)</visible>
 			</control>
 			<!-- album -->
 			<control type="label">
@@ -699,7 +697,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>!Skin.HasSetting(SkinDark)</visible>
+				<visible>!Skin.HasSetting(MusicSkinDark)</visible>
 			</control>
 			<!-- album SkinDark? -->
 			<control type="label">
@@ -714,7 +712,7 @@
 				<scroll>true</scroll>
 				<scrollspeed>30</scrollspeed>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
-				<visible>Skin.HasSetting(SkinDark)</visible>
+				<visible>Skin.HasSetting(MusicSkinDark)</visible>
 			</control>
 			<!-- fanart -->
 			<control type="image">

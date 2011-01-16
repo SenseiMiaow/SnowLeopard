@@ -1,1 +1,31 @@
-...
+To do
+	TVShow tunes (builded in can't test it yet..)
+	Settings - Colors of the Title of Movies, Episode, Music, TVShows, Seasons
+	Views (add TV Show logo's)
+	Dialogs (make the info screen when pressing I when you are in a movie)
+	Settings (only the neccesary stuff..)
+
+
+**Updates v1.2 (Not yet Released!) **
+	TVShow tunes (builded in can't test it yet..)
+	TVShow logo's (TVShows, Episodes and Now Playing) (needs fix when there isn't a file available)
+	TVShow view with horizontal column keeping the show name with scrolling on focus
+	Settings - all settings can be set invidually
+	...other modifications
+
+
+**Updates v1.1 (Released!) **
+	You can set Paper FanArt Blackbox to yes/no for Movies and Episodes apart now. Also the availability to modify the title color for now I am going to give 3 options. (White, Black, Yellowish)
+	Added some transparency to some files to make it look a little bit better
+	Added an animation to the episode/music buttons
+	Added scrolling episode number + title when you are on top of an episode
+	Added special view for Seasons so now it will have a overlay wich display's the season number.
+	Changed the color of the items selected within episodes/music/seasons, made it black instead of the white with black shadow
+
+
+**Updates v1.0 **
+	Modified PaperOverlay with Glossy look (will be available as an setting in menu)
+	First View almost done
+	Modified homescreens
+	Another modification on the homescreens new color see here
+	Another modification paperoverlay on all homescreens see here

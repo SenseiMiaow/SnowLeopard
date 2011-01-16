@@ -13,6 +13,15 @@
 	<constant name="IconCrossfadeTime">400</constant>
 	
 	
+	<include name="no_tv_theme">
+		<onfocus>SetFocus(50)</onfocus>
+	</include>
+	<include name="yes_tv_theme">
+		 <onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=True)</onfocus>
+         <onfocus>SetFocus(50)</onfocus>
+	</include>
+	
+	
 	<!-- SelectedNavbars -->
 	<include name="SelectedNavbars">
 		
@@ -257,47 +266,118 @@
 				</control>
 			</control>
 			
+			
 			<!-- eipsode -->
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
-				<!-- episode title -->
-				<control type="label">
-					<posx>82</posx>
-					<posy>338</posy>
-					<height>60</height>
-					<width>280</width>
-					<label>$INFO[VideoPlayer.Title]</label>
-					<align>center</align>
-					<font>font12_title</font>
-					<textcolor>black</textcolor>
-					<shadowcolor>white</shadowcolor>
-					<scroll>true</scroll>
-					<scrollspeed>30</scrollspeed>
+				
+				<!-- now tvshow logo -->
+				<control type="group">
+					<visible>!Skin.HasSetting(TVShowsLogo) + !Skin.HasSetting(EpisodesTVShowsLogo)</visible>
+					<!-- episode title -->
+					<control type="label">
+						<posx>82</posx>
+						<posy>339</posy>
+						<height>60</height>
+						<width>280</width>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<align>center</align>
+						<font>font12_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode showtitle - season / episode -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>353</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
+						<align>center</align>
+						<font>font11_title</font>
+						<textcolor>black</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode time/duration -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>374</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
+						<align>center</align>
+						<font>font10_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+					</control>
 				</control>
-				<!-- episode showtitle - season / episode -->
-				<control type="label">
-					<posx>112</posx>
-					<posy>353</posy>
-					<height>60</height>
-					<width>220</width>
-					<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
-					<align>center</align>
-					<font>font11_title</font>
-					<textcolor>black</textcolor>
-					<scroll>true</scroll>
-					<scrollspeed>30</scrollspeed>
-				</control>
-				<!-- episode time/duration -->
-				<control type="label">
-					<posx>112</posx>
-					<posy>377</posy>
-					<height>60</height>
-					<width>220</width>
-					<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
-					<align>center</align>
-					<font>font10_title</font>
-					<textcolor>black</textcolor>
-					<shadowcolor>white</shadowcolor>
+				
+				<!-- tvshow logo -->
+				<control type="group">
+					<visible>Skin.HasSetting(TVShowsLogo) | Skin.HasSetting(EpisodesTVShowsLogo)</visible>
+					<!-- episode title -->
+					<control type="label">
+						<posx>82</posx>
+						<posy>339</posy>
+						<height>60</height>
+						<width>280</width>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<align>center</align>
+						<font>font12_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode showtitle - season / episode -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>358</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] / $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
+						<align>center</align>
+						<font>font10_title</font>
+						<textcolor>black</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode time/duration -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>374</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
+						<align>center</align>
+						<font>font10_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+					</control>
+					<!-- tvshow logo -->
+					<control type="image">
+						<posx>75</posx>
+						<posy>298</posy>
+						<width>100</width>
+						<height>38</height>
+						<align>left</align>
+						<aligny>top</aligny>
+						<texture background="true">$INFO[Player.Folderpath]logo.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+					<control type="image">
+						<posx>75</posx>
+						<posy>298</posy>
+						<width>100</width>
+						<height>38</height>
+						<align>left</align>
+						<aligny>top</aligny>
+						<texture background="true">$INFO[Player.Folderpath]../logo.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
 				</control>
 			</control>
 		</control>
@@ -440,44 +520,114 @@
 			<!-- eipsode -->
 			<control type="group">
 				<visible>VideoPlayer.Content(Episodes)</visible>
-				<!-- episode title -->
-				<control type="label">
-					<posx>82</posx>
-					<posy>207</posy>
-					<height>60</height>
-					<width>280</width>
-					<label>$INFO[VideoPlayer.Title]</label>
-					<align>center</align>
-					<font>font12_title</font>
-					<textcolor>black</textcolor>
-					<shadowcolor>white</shadowcolor>
-					<scroll>true</scroll>
-					<scrollspeed>30</scrollspeed>
+				
+				<!-- now tvshow logo -->
+				<control type="group">
+					<visible>!Skin.HasSetting(TVShowsLogo) + !Skin.HasSetting(EpisodesTVShowsLogo)</visible>
+					<!-- episode title -->
+					<control type="label">
+						<posx>82</posx>
+						<posy>207</posy>
+						<height>60</height>
+						<width>280</width>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<align>center</align>
+						<font>font12_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode showtitle - season / episode -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>221</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
+						<align>center</align>
+						<font>font11_title</font>
+						<textcolor>black</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode time/duration -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>242</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
+						<align>center</align>
+						<font>font10_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+					</control>
 				</control>
-				<!-- episode showtitle - season / episode -->
-				<control type="label">
-					<posx>112</posx>
-					<posy>221</posy>
-					<height>60</height>
-					<width>220</width>
-					<label>$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Season,,x]$INFO[VideoPlayer.Episode]</label>
-					<align>center</align>
-					<font>font11_title</font>
-					<textcolor>black</textcolor>
-					<scroll>true</scroll>
-					<scrollspeed>30</scrollspeed>
-				</control>
-				<!-- episode time/duration -->
-				<control type="label">
-					<posx>112</posx>
-					<posy>242</posy>
-					<height>60</height>
-					<width>220</width>
-					<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
-					<align>center</align>
-					<font>font10_title</font>
-					<textcolor>black</textcolor>
-					<shadowcolor>white</shadowcolor>
+				
+				<!-- tvshow logo -->
+				<control type="group">
+					<visible>Skin.HasSetting(TVShowsLogo) | Skin.HasSetting(EpisodesTVShowsLogo)</visible>
+					<!-- episode title -->
+					<control type="label">
+						<posx>82</posx>
+						<posy>207</posy>
+						<height>60</height>
+						<width>280</width>
+						<label>$INFO[VideoPlayer.Title]</label>
+						<align>center</align>
+						<font>font12_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode showtitle - season / episode -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>226</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$LOCALIZE[20373] $INFO[VideoPlayer.Season] / $LOCALIZE[20359] $INFO[VideoPlayer.Episode]</label>
+						<align>center</align>
+						<font>font10_title</font>
+						<textcolor>black</textcolor>
+						<scroll>true</scroll>
+						<scrollspeed>30</scrollspeed>
+					</control>
+					<!-- episode time/duration -->
+					<control type="label">
+						<posx>112</posx>
+						<posy>242</posy>
+						<height>60</height>
+						<width>220</width>
+						<label>$INFO[VideoPlayer.Time] / $INFO[VideoPlayer.Duration]</label>
+						<align>center</align>
+						<font>font10_title</font>
+						<textcolor>black</textcolor>
+						<shadowcolor>white</shadowcolor>
+					</control>
+					<!-- tvshow logo -->
+					<control type="image">
+						<posx>75</posx>
+						<posy>168</posy>
+						<width>100</width>
+						<height>38</height>
+						<align>left</align>
+						<aligny>top</aligny>
+						<texture background="true">$INFO[Player.Folderpath]logo.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
+					<control type="image">
+						<posx>75</posx>
+						<posy>168</posy>
+						<width>100</width>
+						<height>38</height>
+						<align>left</align>
+						<aligny>top</aligny>
+						<texture background="true">$INFO[Player.Folderpath]../logo.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+					</control>
 				</control>
 			</control>
 		</control>

@@ -29,7 +29,7 @@
 				<width>220</width>
 				<height>80</height>
 				<aspectratio>keep</aspectratio>
-				<texture>Confluence_Logo.png</texture>
+				<texture>logo.png</texture>
 			</control>
 			<control type="grouplist" id="9000">
 				<posx>10</posx>
