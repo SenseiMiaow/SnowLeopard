@@ -182,6 +182,31 @@
 					<ondown>9001</ondown>
 					
 					
+					<!-- SnowLeopard - Settings -->
+					<control type="label" id="900">
+						<width>750</width>
+						<height>45</height>
+						<font>font13_title</font>
+						<label>SnowLeopard - Settings</label>
+						<textcolor>SLyellow</textcolor>
+						<shadowcolor>black</shadowcolor>
+						<align>left</align>
+						<aligny>center</aligny>
+					</control>
+					<control type="radiobutton" id="901">
+						<width>750</width>
+						<height>40</height>
+						<font>font13</font>
+						<label>Watched Overlay</label>
+						<textcolor>grey2</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<texturefocus>MenuItemFO.png</texturefocus>
+						<texturenofocus>MenuItemNF.png</texturenofocus>
+						<onclick>Skin.ToggleSetting(Overlay)</onclick>
+						<selected>Skin.HasSetting(Overlay)</selected>
+					</control>
+					
+					
 					<!-- SnowLeopard - Movies -->
 					<control type="label" id="910">
 						<width>750</width>

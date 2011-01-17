@@ -54,6 +54,14 @@
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
+							<control type="image">
+								<posx>86</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
+							</control>
 						</control>
 					</itemlayout>
 					<focusedlayout width="164" height="224">
@@ -86,6 +94,14 @@
 								<height>219</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>86</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
 							</control>
 						</control>
 					</focusedlayout>
@@ -899,6 +915,14 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
+								<posx>86</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
 								<posx>10</posx>
 								<posy>52</posy>
 								<width>146</width>
@@ -950,6 +974,14 @@
 								<height>179</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>86</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>10</posx>
@@ -1449,6 +1481,14 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
+								<posx>86</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
 								<posx>10</posx>
 								<posy>52</posy>
 								<width>146</width>
@@ -1500,6 +1540,14 @@
 								<height>179</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>86</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>10</posx>
@@ -1983,6 +2031,14 @@
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
+								<posx>100</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
+							</control>
+							<control type="image">
 								<posx>10</posx>
 								<posy>0</posy>
 								<width>160</width>
@@ -2034,6 +2090,14 @@
 								<height>105</height>
 								<texture background="true">$INFO[ListItem.Icon]</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
+							</control>
+							<control type="image">
+								<posx>100</posx>
+								<posy>0</posy>
+								<width>70</width>
+								<height>69</height>
+								<texture>$INFO[ListItem.Overlay]</texture>
+								<visible>Skin.HasSetting(Overlay) + !IsEmpty(ListItem.Overlay)</visible>
 							</control>
 							<control type="image">
 								<posx>10</posx>

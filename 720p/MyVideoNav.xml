@@ -1,6 +1,6 @@
 <window id="25">
 	<defaultcontrol>9899</defaultcontrol>
-	<allowoverlay>no</allowoverlay>
+	<allowoverlay>yes</allowoverlay>
 	<!-- <views>901,902,903,904,50,500,550,560,501,508,504,503,505,511</views> -->
 	<views>904,903,902,901,50,500,550,560,505,511</views>
 	<controls>
