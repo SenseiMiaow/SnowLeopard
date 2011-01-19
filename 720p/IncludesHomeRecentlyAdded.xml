@@ -16,7 +16,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.png</texture>
+					<texture background="true">paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				</control>
@@ -25,7 +25,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperTop.png</texture>
+					<texture background="true">paperTop.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 					<visible>Skin.HasSetting(MoviesPaperOverlay)</visible>
@@ -39,7 +39,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.png</texture>
+					<texture background="true">paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				</control>
@@ -48,7 +48,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperTopDark.png</texture>
+					<texture background="true">paperTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 					<visible>Skin.HasSetting(MoviesPaperOverlay)</visible>
@@ -60,7 +60,7 @@
 				<posy>150</posy>
 				<width>605</width>
 				<height>720</height>
-				<texture background="true">home/paperTopGlossy.png</texture>
+				<texture background="true">paperTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 				<visible>Skin.HasSetting(MoviesPaperOverlayGlossy)</visible>
@@ -133,7 +133,7 @@
 				<posy>595</posy>
 				<width>514</width>
 				<height>265</height>
-				<texture background="true">home/fanart_shadow.png</texture>
+				<texture background="true">fanart_shadow.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -144,7 +144,7 @@
 				<posy>596</posy>
 				<width>500</width>
 				<height>252</height>
-				<texture background="true">home/background_none.jpg</texture>
+				<texture background="true">background_none.jpg</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>252</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -167,7 +167,7 @@
 				<posy>761</posy>
 				<width>50</width>
 				<height>150</height>
-				<texture background="true">home/paperclip.png</texture>
+				<texture background="true">paperclip.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<animation effect="rotate" end="70" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 			</control>
@@ -199,7 +199,7 @@
 				<posy>290</posy>
 				<width>490</width>
 				<height>480</height>
-				<texture background="true">home/dogtags.png</texture>
+				<texture background="true">dogtags.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<animation effect="rotate" end="25" condition="[Container(9000).HasFocus(10) | Control.HasFocus(8010)]">Conditional</animation>
 			</control>
@@ -249,7 +249,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.png</texture>
+					<texture background="true">paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				</control>
@@ -258,7 +258,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperEpisodeTop.png</texture>
+					<texture background="true">paperEpisodeTop.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 					<visible>Skin.HasSetting(EpisodesPaperOverlay)</visible>
@@ -272,7 +272,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.png</texture>
+					<texture background="true">paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				</control>
@@ -281,7 +281,7 @@
 					<posy>150</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperEpisodeTopDark.png</texture>
+					<texture background="true">paperEpisodeTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 					<visible>Skin.HasSetting(EpisodesPaperOverlay)</visible>
@@ -293,7 +293,7 @@
 				<posy>150</posy>
 				<width>605</width>
 				<height>720</height>
-				<texture background="true">home/paperEpisodeTopGlossy.png</texture>
+				<texture background="true">paperEpisodeTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 				<visible>Skin.HasSetting(EpisodesPaperOverlayGlossy)</visible>
@@ -448,7 +448,7 @@
 				<posy>582</posy>
 				<width>485</width>
 				<height>290</height>
-				<texture background="true">home/fanart_shadow.png</texture>
+				<texture background="true">fanart_shadow.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -459,7 +459,7 @@
 				<posy>632</posy>
 				<width>480</width>
 				<height>230</height>
-				<texture background="true">home/background_none.jpg</texture>
+				<texture background="true">background_none.jpg</texture>
 				<aspectratio>stretch</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -517,7 +517,7 @@
 				<posy>761</posy>
 				<width>50</width>
 				<height>150</height>
-				<texture background="true">home/paperclip.png</texture>
+				<texture background="true">paperclip.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<animation effect="rotate" end="70" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 			</control>
@@ -549,7 +549,7 @@
 				<posy>870</posy>
 				<width>490</width>
 				<height>480</height>
-				<texture background="true">home/dogtags.png</texture>
+				<texture background="true">dogtags.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<animation effect="rotate" end="80" condition="[Container(9000).HasFocus(11) | Control.HasFocus(8011)]">Conditional</animation>
 			</control>
@@ -573,7 +573,7 @@
 					<posy>210</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paper.png</texture>
+					<texture background="true">paper.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 				</control>
@@ -582,7 +582,7 @@
 					<posy>210</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperTop.png</texture>
+					<texture background="true">paperTop.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 					<visible>Skin.HasSetting(MusicPaperOverlay)</visible>
@@ -596,7 +596,7 @@
 					<posy>210</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperDark.png</texture>
+					<texture background="true">paperDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 				</control>
@@ -605,7 +605,7 @@
 					<posy>210</posy>
 					<width>605</width>
 					<height>720</height>
-					<texture background="true">home/paperTopDark.png</texture>
+					<texture background="true">paperTopDark.png</texture>
 					<aspectratio>scale</aspectratio>
 					<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 					<visible>Skin.HasSetting(MusicPaperOverlay)</visible>
@@ -617,7 +617,7 @@
 				<posy>210</posy>
 				<width>605</width>
 				<height>720</height>
-				<texture background="true">home/paperTopGlossy.png</texture>
+				<texture background="true">paperTopGlossy.png</texture>
 				<aspectratio>scale</aspectratio>
 				<animation effect="rotate" end="8" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 				<visible>Skin.HasSetting(MusicPaperOverlayGlossy)</visible>
@@ -720,7 +720,7 @@
 				<posy>619</posy>
 				<width>514</width>
 				<height>315</height>
-				<texture background="true">home/fanart_shadow.png</texture>
+				<texture background="true">fanart_shadow.png</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -731,7 +731,7 @@
 				<posy>620</posy>
 				<width>500</width>
 				<height>300</height>
-				<texture background="true">home/background_none.jpg</texture>
+				<texture background="true">background_none.jpg</texture>
 				<aspectratio>scale</aspectratio>
 				<fadetime>200</fadetime>
 				<include>VisibleFadeEffect</include>
@@ -754,7 +754,7 @@
 				<posy>870</posy>
 				<width>50</width>
 				<height>150</height>
-				<texture background="true">home/paperclip.png</texture>
+				<texture background="true">paperclip.png</texture>
 				<aspectratio>stretch</aspectratio>
 				<animation effect="rotate" end="70" condition="[Container(9000).HasFocus(3) | Control.HasFocus(8013)]">Conditional</animation>
 			</control>
@@ -764,7 +764,7 @@
 				<posy>-160</posy>
 				<width>400</width>
 				<height>400</height>
-				<texture background="true">home/cdrom.png</texture>
+				<texture background="true">cdrom.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 		</control>
@@ -816,7 +816,7 @@
 								<posy>-4</posy>
 								<width>170</width>
 								<height>224</height>
-								<texture>home/poster_shadow.png</texture>
+								<texture>poster_shadow.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -849,7 +849,7 @@
 								<posy>-8</posy>
 								<width>170</width>
 								<height>238</height>
-								<texture>home/poster_shadow_focus.png</texture>
+								<texture>poster_shadow_focus.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -1034,7 +1034,7 @@
 								<posy>0</posy>
 								<width>178</width>
 								<height>130</height>
-								<texture>home/poster_shadow.png</texture>
+								<texture>poster_shadow.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -1087,7 +1087,7 @@
 								<posy>-7</posy>
 								<width>184</width>
 								<height>139</height>
-								<texture>home/poster_shadow_focus.png</texture>
+								<texture>poster_shadow_focus.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -1317,7 +1317,7 @@
 								<posy>0</posy>
 								<width>178</width>
 								<height>130</height>
-								<texture>home/poster_shadow.png</texture>
+								<texture>poster_shadow.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">
@@ -1371,7 +1371,7 @@
 								<posy>-7</posy>
 								<width>184</width>
 								<height>137</height>
-								<texture>home/poster_shadow_focus.png</texture>
+								<texture>poster_shadow_focus.png</texture>
 								<aspectratio scalediffuse="false">stretch</aspectratio>
 							</control>
 							<control type="image">

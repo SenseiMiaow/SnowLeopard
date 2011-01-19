@@ -10,7 +10,7 @@
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
-			<texture>home/background.jpg</texture>
+			<texture>background.jpg</texture>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 		</control>
 		
@@ -58,7 +58,7 @@
 				<posy>-28</posy>
 				<width>1280</width>
 				<height>150</height>
-				<texture>home/navbar.png</texture>
+				<texture>navbar.png</texture>
 			</control>
 			
 			
@@ -102,7 +102,7 @@
 						<height>88</height>
 						<align>right</align>
 						<aligny>center</aligny>
-						<texture>home/navbar_focus.png</texture>
+						<texture>navbar_focus.png</texture>
 						<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 						<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
 					</control>
@@ -124,7 +124,7 @@
 						<posy>64</posy>
 						<width>20</width>
 						<height>20</height>
-						<texture>home/navbar_arrow.png</texture>
+						<texture>navbar_arrow.png</texture>
 						<visible>Container(9000).HasFocus(2) | Container(9000).HasFocus(3) | Container(9000).HasFocus(5) | Container(9000).HasFocus(7) | Container(9000).HasFocus(9) | [Container(9000).HasFocus(1) + [[Skin.HasSetting(HomeScriptButton1) + !IsEmpty(Skin.String(HomeScriptButton1_label))] | [Skin.HasSetting(HomeScriptButton2) + !IsEmpty(Skin.String(HomeScriptButton2_label))] | [Skin.HasSetting(HomeScriptButton3) + !IsEmpty(Skin.String(HomeScriptButton3_label))] | [Skin.HasSetting(HomeScriptButton4) + !IsEmpty(Skin.String(HomeScriptButton4_label))] | [Skin.HasSetting(HomeScriptButton5) + !IsEmpty(Skin.String(HomeScriptButton5_label))] | [Skin.HasSetting(HomeScriptButton6) + !IsEmpty(Skin.String(HomeScriptButton6_label))]]] | Container(9000).HasFocus(10) | Container(9000).HasFocus(11)</visible>
 						<animation effect="fade" start="0" end="100" time="200">Focus</animation>
 						<animation effect="fade" start="100" end="0" time="0">UnFocus</animation>
@@ -152,6 +152,51 @@
 						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
 						<visible>Skin.HasSetting(HomeMenuNoTVShowsButton) + Library.HasContent(TVShows)</visible>
 					</item>
+					
+					
+					<!-- HomeCustomButtons -->
+					<item id="20">
+						<label>$INFO[Skin.String(HomeCustomButton1_Label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeCustomButton1_Path)]</onclick>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
+						<visible>Skin.HasSetting(HomeCustomButton1)</visible>
+					</item>
+					<item id="21">
+						<label>$INFO[Skin.String(HomeCustomButton2_Label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeCustomButton2_Path)]</onclick>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
+						<visible>Skin.HasSetting(HomeCustomButton2)</visible>
+					</item>
+					<item id="22">
+						<label>$INFO[Skin.String(HomeCustomButton3_Label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeCustomButton3_Path)]</onclick>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
+						<visible>Skin.HasSetting(HomeCustomButton3)</visible>
+					</item>
+					<item id="23">
+						<label>$INFO[Skin.String(HomeCustomButton4_Label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeCustomButton4_Path)]</onclick>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
+						<visible>Skin.HasSetting(HomeCustomButton4)</visible>
+					</item>
+					<item id="24">
+						<label>$INFO[Skin.String(HomeCustomButton5_Label)]</label>
+						<onclick>Setfocus(9000)</onclick>
+						<onclick>$INFO[Skin.String(HomeCustomButton5_Path)]</onclick>
+						<icon>special://skin/backgrounds/videos.jpg</icon>
+						<thumb>$INFO[Skin.String(Home_Custom_Back_TVShow_Folder)]</thumb>
+						<visible>Skin.HasSetting(HomeCustomButton5)</visible>
+					</item>
+					
+					
 					<item id="3">
 						<label>2</label>
 						<onclick>ActivateWindow(Music)</onclick>
@@ -239,7 +284,7 @@
 					<posy>-29</posy>
 					<width>1280</width>
 					<height>125</height>
-					<texture>home/navbar_submenu.png</texture>
+					<texture>navbar_submenu.png</texture>
 				</control>
 				<control type="grouplist" id="9010">
 					<posx>10</posx>

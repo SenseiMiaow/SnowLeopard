@@ -1130,6 +1130,6 @@
 			</control>
 		</control>
 		<include>SideBladeRight</include>
-		<include>Clock</include>
+		<!-- <include>Clock</include> -->
 	</controls>
 </window>
