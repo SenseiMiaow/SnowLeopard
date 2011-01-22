@@ -13,13 +13,14 @@
 	<constant name="IconCrossfadeTime">400</constant>
 	
 	
+	<!-- TV Tunes -->
 	<include name="no_tv_theme">
-		<onfocus>SetFocus(50)</onfocus>
-	</include>
-	<include name="yes_tv_theme">
-		 <onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=True)</onfocus>
+        <onfocus>SetFocus(50)</onfocus>
+    </include>
+    <include name="yes_tv_theme">
+         <onfocus>XBMC.RunScript(script.TvTunes,backend=True&amp;loop=True)</onfocus>
          <onfocus>SetFocus(50)</onfocus>
-	</include>
+    </include>
 	
 	
 	<!-- SelectedNavbars -->
