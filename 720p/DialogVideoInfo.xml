@@ -329,7 +329,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)] + !Control.HasFocus(12)</visible>
+					<visible>Container.Content(TVShows) + !Control.HasFocus(12)</visible>
 					<posy>90</posy>
 					<posx>210</posx>
 					<include>VisibleFadeEffect</include>
@@ -473,7 +473,7 @@
 					</control>
 				</control>
 				<control type="group">
-					<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] + !Control.HasFocus(12)</visible>
+					<visible>Container.Content(TVShows) + !Control.HasFocus(12)</visible>
 					<posy>90</posy>
 					<posx>210</posx>
 					<include>VisibleFadeEffect</include>

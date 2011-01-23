@@ -11,7 +11,7 @@
 			
 			<control type="group">
 				<control type="panel" id="901">
-					<visible>[Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] | Window.IsVisible(VideoFiles)]</visible>
+					<visible>[Container.Content(Movies) | Container.Content(TVShows) | Window.IsVisible(VideoFiles)]</visible>
 					<visible>!Container.Content(LiveTV)</visible>
 					<posx>25</posx>
 					<posy>177</posy>
@@ -872,7 +872,7 @@
 			
 			<control type="group">
 				<control type="panel" id="904">
-					<visible>[Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
+					<visible>Container.Content(TVShows)</visible>
 					<posx>25</posx>
 					<posy>177</posy>
 					<width>655</width>
@@ -2570,7 +2570,7 @@
 				<texture>GlassTitleBar.png</texture>
 			</control>
 			<control type="wraplist" id="501">
-				<visible>Container.Content(Movies) | Container.Content(Seasons) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)] | Window.IsVisible(VideoFiles)</visible>
+				<visible>Container.Content(Movies) | Container.Content(Seasons) | Container.Content(TVShows) | Window.IsVisible(VideoFiles)</visible>
 				<visible>!Container.Content(LiveTV)</visible>
 				<posx>-123</posx>
 				<posy>0</posy>
@@ -2848,7 +2848,7 @@
 			<posx>0</posx>
 			<posy>440</posy>
 			<control type="fixedlist" id="508">
-				<visible>Container.Content(Movies) | [Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)]</visible>
+				<visible>Container.Content(Movies) | Container.Content(TVShows)</visible>
 				<posx>-20</posx>
 				<posy>0</posy>
 				<width>1320</width>
@@ -3439,7 +3439,7 @@
 			<control type="group">
 				<posx>50</posx>
 				<posy>250</posy>
-				<visible>Container.Content(TVShows) + !Skin.HasSetting(TVShowsUsePosters)</visible>
+				<visible>Container.Content(TVShows)</visible>
 				<control type="image">
 					<posx>0</posx>
 					<posy>0</posy>
@@ -3563,7 +3563,7 @@
 			<control type="group">
 				<posx>80</posx>
 				<posy>170</posy>
-				<visible>Container.Content(TVShows) + Skin.HasSetting(TVShowsUsePosters)</visible>
+				<visible>Container.Content(TVShows)</visible>
 				<control type="group">
 					<posx>10</posx>
 					<camera x="640" y="200" />
